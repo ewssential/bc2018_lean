@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>QuickStart on Lean Development</h1>
+          <h3>A case study on how rapid prototyping with lean methods</h3>
+        </section>
+        <section>
+          <section>
+            <h2>Scenario</h2>
+            <p class="fragment step-fade-in-then-out">
+              Hansehack defined (short) timeframe, an eager team to perform and
+              a set goal (by team commitment)
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              <strong>one scenario</strong> but any other scenario that fits
+              into those constraints can be tackled with organisational methods
+              introduced here
+            </p>
+          </section>
+          <section>
+            <h2>More Scenarios</h2>
+
+            <p class="fragment step-fade-in-then-out">
+              <span> organising an event (like a sports torunament) </span>
+              <span>preparing for an important business presentation</span>
+              <span>prototyping or (open source) software development</span>
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              <strong>
+                In short: any kind of project thats not too big for a handful of
+                people in a reasonable timeframe
+              </strong>
+            </p>
+          </section>
+        </section>
+        <section>
+          <h2>Goals 4 today</h2>
+          <div style="margin-bottom: 25px;">Introduction to lean methods</div>
+          <div style="margin-bottom: 25px;">
+            Understanding of what lean means (and agile)
+          </div>
+          <div style="margin-bottom: 25px;">Understanding of Kanban</div>
+        </section>
+
+        <section>
+          <section>
+            <h2>Constraints</h2>
+            <h3>team</h3>
+            <h3>goal</h3>
+            <h3>time-frame</h3>
+          </section>
+          <section>
+            <h3>team</h3>
+            <p>
+              1 person is no team
+              <span class="fragment step-fade-in-then-out">...</span>
+              <span class="fragment step-fade-in-then-out">
+                but this methods can still be applied (however the gain is much
+                smaller).
+              </span>
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              The bigger the team the more disciplin is needed to perform well
+              (even with all kinds of organisational tricks).
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              To get warm with lean methods don't start to big (not more than
+              eight) or to small (three at least)
+            </p>
+          </section>
+
+          <section>
+            <h3>goal</h3>
+            <p>
+              <strong>
+                Begin with a definition of what you want to achive within the
+                project</strong
+              >
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              The team has to commit to this goal. Minor and mayor changes are
+              allowed on the road, but the bigger the change the less likely it
+              should be.
+            </p>
+            <p>
+              <strong class="fragment step-fade-in-then-out">
+                Every change in direction (goals) eats up energy and
+                motivation</strong
+              >
+            </p>
+          </section>
+          <section>
+            <h3>time-frame</h3>
+            <p>
+              <strong>
+                face it: the time you are willing or able to spend on a project
+                defines is the biggest factor determining the success and
+                quality of your results.</strong
+              >
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              Plan your goals with the available time and set milestones. Most
+              likely you will need more time to finish (or make it as shiny as
+              you would expect it to be according to your own standards).
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              If the time frame is clear from the beginning you can define your
+              goals more precisely.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>LEAN</h1>
+          </section>
+          <section>
+            <h2>What is lean?</h2>
+
+            <p class="fragment step-fade-in-then-out">
+              handfull of definitions
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              dozens of big expensive books
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              thousands of very expensive consultants that will explain you
+              "Lean"
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              So in short (and probably wrong according to one or another
+              definition):
+            </p>
+          </section>
+          <section>
+            <p>
+              Lean is a concept/philosophy on how to organise and run a company
+              <strong>efficient</strong>
+            </p>
+
+            <p class="fragment step-fade-in-then-out">
+              Lean defines <strong>efficient</strong> as the reduction of
+              <strong>waste</strong> in a process that generates customer value
+              and thus money.
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              Waste is a flaw in this process and can be any number of things:
+              unreasonable work, transportations, waiting, overproduction,
+              defects, ...
+            </p>
+          </section>
+
+          <section>
+            <p>
+              Lean establishes a company culture, that actively explores the
+              processes, scans for waste and introduces continous processes to
+              reduce this waste.
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              Lean includes all persons involved in the value generating process
+              and especially relies on the workers mostly involved with the
+              process.
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              This has some implications on how a lean company should be
+              managed, since a top-down hierarchical "i say, you do" culture
+              contradicts lean processes.
+            </p>
+          </section>
+          <section>
+            <h3>Why is lean so important?</h3>
+
+            <p class="fragment step-fade-in-then-out">
+              There are a handfull of definitions, dozens of big expensive books
+              and thousands of very expensive consultants that will explain you
+              "Lean"
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              Lean applies to all kinds of companies and many big players became
+              big because of lean thinking (Toyota).
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              A small IT startup can use lean and a 100 year old manufacturer as
+              well.
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              Lean is a structural different way of structuring and organising a
+              company, but it has it payoffs -> focus on customer value &
+              reduction of waste.
+            </p>
+          </section>
+
+          <section>
+            <h3>Lean and agile?</h3>
+
+            <p class="fragment step-fade-in-then-out">
+              Lean is a bit older than agile - some say lean methods inspired
+              the foundation of agile and some even say: if you go agile your
+              also going lean.
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              And the goals of both are to a high degree identical.
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              However agile focuses on __delivering a finished product__, while
+              lean focuses on __reduction of waste__. This (tiny) difference
+              leads to some operational differences.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Kanban</h2>
+            Kanban is one method that is often used within lean organisations.
+          </section>
+          <section>
+            <h3>How does Kanban work?</h3>
+
+            <p class="fragment step-fade-in-then-out">
+              A board with three (sometimes more columns): Open, Work in
+              Progress, Done
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              A task is placed in Open and moves from left to right. When it
+              reaches Done it's done. And regular meetings with the team where
+              the content of the board and it's progress is discussed.
+            </p>
+          </section>
+
+          <section>
+            <h3>Sounds simple, so whats the deal here?</h3>
+
+            <p class="fragment step-fade-in-then-out">
+              A board with three (sometimes more columns): Open, Work in
+              Progress, Done
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              A task is placed in Open and moves from left to right. When it
+              reaches Done it's done. And regular meetings with the team where
+              the content of the board and it's progress is discussed.
+            </p>
+          </section>
+
+          <section>
+            Easy to grasp visualisation of Open work, work in progress and Done
+            tasks. Because of this comprehensiveness the team can easily see
+            what it is currently doing, what they already achieved and what
+            liesahead of them. -> You always know where you currently stand! It
+            also allows discussion on the task at hand - that need to be done
+            next ->Focus.
+
+            <p class="fragment step-fade-in-then-out">Further capabilities:</p>
+            <p class="fragment step-fade-in-then-out">
+              It can be used to detect bottlenecks, inefficiencies and problems.
+              If you have 4 open tasks handled by 4 different people, that are
+              all waiting for one specific ressource,
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              then you have a bootleneck.
+            </p>
+          </section>
+          <section>
+            One can find such cases even without Kanban, but with Kanban it
+            becomes visible.
+
+            <p class="fragment step-fade-in-then-out">
+              (Imagine: daily Kanban meetings and the above scenario occures
+              several days per week. The question: what slows you down? is
+              answered several times with the same answer. Suddenly everybody in
+              the team realises the limitation.)
+            </p>
+          </section>
+          <section>
+            <h2>Kanban-focus</h2>
+            <p class="fragment step-fade-in-then-out">
+              manage work in progress (reduce it to a minimum)
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              allow work to flow as efficient as possible
+            </p>
+            <p class="fragment step-fade-in-then-out">
+              optimize throughput (Sidenote: Scrum focuses on tasks being Done
+              at a given timepoint, while Kanban focuses on througput. Several
+              blends of both are possible and applied.)
+            </p>
+          </section>
+        </section>
+        <section>
+          <h2>HANDS-ON</h2>
+          <div class="fragment step-fade-in-then-out">
+            <p><strong> Project 1</strong></p>
+            <p><strong> Project 2</strong></p>
+
+            <p><strong> or any other project you can think of</strong></p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          }
+        ]
+      });
+    </script>
+  </body>
+</html>
